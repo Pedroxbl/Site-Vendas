@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loja Geek - Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">Loja Geek</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Loja</a>
+        <a href="#">Blog</a>
+        <a href="#">Sobre</a>
+      </nav>
+      <div class="actions">
+        <button id="btn-login" class="btn">Entrar</button>
+        <button id="btn-cart" class="btn cart-btn">Carrinho <span id="cart-count" class="badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Itens exclusivos para gamers e colecionadores</h1>
+        <p>Lançamentos, arte digital e gadgets feitos com paixão. Explore coleções e encontre algo único.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn primary">Ver Coleção</a>
+          <button class="btn">Novidades</button>
+        </div>
+      </div>
+      <div class="hero-image"><img src="https://picsum.photos/seed/hero/800/400" alt="hero"></div>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <section class="content">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <input id="search" class="search" placeholder="Buscar produto..." />
+        <h4>Categorias</h4>
+        <div id="categories" class="categories"></div>
+        <h4>Filtros rápidos</h4>
+        <div class="quick-filters">
+          <button data-filter="promo" class="filter-btn">Promoções</button>
+          <button data-filter="best" class="filter-btn">Mais vendidos</button>
+        </div>
+      </aside>
+
+      <!-- PRODUTOS -->
+      <section class="products-area">
+        <div class="products-header">
+          <h2>Produtos</h2>
+          <div id="results-count" class="muted">Mostrando 0 itens</div>
+        </div>
+        <div id="products" class="products-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Loja Geek</h3>
+        <p>Feita por creators para gamers. Produtos originais e edição limitada.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li>Loja</li>
+          <li>Blog</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Siga</h4>
+        <p>Instagram • Discord • Twitter</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CARRINHO -->
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Seu carrinho</h3>
+      <button id="close-cart" class="btn">Fechar</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total">Total: R$ <span id="cart-total">0.00</span></div>
+      <button id="checkout" class="btn primary">Finalizar compra</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

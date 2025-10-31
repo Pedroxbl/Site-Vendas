@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto - Loja Geek</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">Loja Geek</div>
+      <div class="actions">
+        <button id="btn-cart" class="btn cart-btn">Carrinho <span id="cart-count" class="badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="product-detail">
+      <div class="product-images">
+        <img id="product-img" src="" alt="Produto">
+      </div>
+      <div class="product-info">
+        <h1 id="product-name">Nome do Produto</h1>
+        <p id="product-category" class="cat">Categoria</p>
+        <p id="product-price" class="price">R$ 0,00</p>
+        <p id="product-desc">Descrição detalhada do produto vai aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+        <div class="add-product">
+          <label for="qty">Quantidade:</label>
+          <input type="number" id="qty" value="1" min="1">
+          <button id="add-to-cart" class="btn primary">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Carrinho -->
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Seu carrinho</h3>
+      <button id="close-cart" class="btn">Fechar</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total">Total: R$ <span id="cart-total">0.00</span></div>
+      <button id="checkout" class="btn primary">Finalizar compra</button>
+    </div>
+  </div>
+
+  <script src="produto.js"></script>
+</body>
+</html>
