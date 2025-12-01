@@ -1,0 +1,261 @@
+/* Tema Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #111;
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  padding: 10px 16px;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.btn:hover {
+  background: #333;
+  transform: scale(1.03);
+}
+
+.btn.primary {
+  background: #6a5dfc;
+  border-color: #6a5dfc;
+}
+
+.btn.primary:hover {
+  background: #7A6CFF;
+}
+
+.btn.full {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* Header */
+.topbar {
+  background: #1a1a1a;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.top-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+  background: #222;
+  color: white;
+}
+
+.carrinho-btn span {
+  background: #6a5dfc;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+/* Banner */
+.banner {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(45deg, #6a5dfc, #4732d6);
+  margin-bottom: 20px;
+  color: white;
+  border-bottom: 4px solid #222;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 25px;
+  padding: 25px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar li:hover {
+  color: #6a5dfc;
+}
+
+/* Produtos */
+.produtos {
+  flex: 1;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.produto-card {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.produto-card:hover {
+  transform: translateY(-4px);
+}
+
+.prod-img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ---------------------- */
+/* NOVO CARRINHO PREMIUM  */
+/* ---------------------- */
+
+.carrinho-page {
+  display: flex;
+  justify-content: center;
+}
+
+.carrinho-box {
+  width: 100%;
+  max-width: 550px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid #333;
+}
+
+.carrinho-box h2 {
+  text-align: center;
+  color: #6a5dfc;
+  margin-bottom: 20px;
+}
+
+#cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  background: #222;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cart-item strong {
+  font-size: 16px;
+}
+
+.cart-item p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.cart-item button {
+  margin-top: 8px;
+  background: #6a5dfc;
+  border-color: #6a5dfc;
+}
+
+.carrinho-total {
+  margin-top: 25px;
+  font-size: 22px;
+  text-align: center;
+  color: #6a5dfc;
+  font-weight: bold;
+}
+
+/* ---------------------- */
+/* CHECKOUT BONITÃO       */
+/* ---------------------- */
+
+.checkout-page {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.checkout-box {
+  width: 100%;
+  max-width: 600px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid #333;
+}
+
+.checkout-box h2 {
+  text-align: center;
+  color: #6a5dfc;
+  margin-bottom: 20px;
+}
+
+.checkout-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+}
+
+.checkout-total {
+  margin-top: 10px;
+  font-size: 22px;
+  text-align: center;
+  color: #6a5dfc;
+  font-weight: bold;
+}

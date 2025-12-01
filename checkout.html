@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="logo">Checkout</div>
+    <a href="carrinho.html" class="btn">Voltar</a>
+  </header>
+
+  <main class="checkout-page">
+    <div class="checkout-box">
+
+      <h2>Resumo da Compra</h2>
+      <div id="checkoutResumo"></div>
+      <p class="checkout-total">Total: R$ <span id="checkoutTotal">0,00</span></p>
+
+      <h2 style="margin-top:30px;">Pagamento</h2>
+
+      <label>Nome completo</label>
+      <input type="text">
+
+      <label>Número do cartão</label>
+      <input type="text">
+
+      <label>Validade</label>
+      <input type="text">
+
+      <label>CVV</label>
+      <input type="text">
+
+      <button class="btn primary full" style="margin-top:15px;">
+        Finalizar Pedido
+      </button>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
